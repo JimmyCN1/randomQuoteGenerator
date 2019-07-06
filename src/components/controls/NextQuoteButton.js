@@ -13,7 +13,8 @@ class NextQuoteButton extends React.Component {
   render() {
     let styles = {
       borderRadius: "4px",
-      // backgroundColor: "lightgray",
+      fontSize: "120%",
+      fontWeight: "bold",
       borderStyle: "none",
       color: "white"
     };
