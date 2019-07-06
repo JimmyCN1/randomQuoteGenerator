@@ -48,7 +48,7 @@ class Quote extends React.Component {
       <div style={styles}>
         <QuoteText quote={quote} />
         <QuoteAuthor author={author} />
-        <Controls fetchNextQuote={fetchNextQuote} />
+        <Controls quote={quote} fetchNextQuote={fetchNextQuote} />
       </div>
     );
   }
