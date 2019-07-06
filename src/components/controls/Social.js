@@ -1,7 +1,20 @@
 import React from "react";
+import { endianness } from "os";
 
 function Social(props) {
-  return <p>Twitter | Tumblr | Facebook</p>;
+  return (
+    <div>
+      <i className="fab fa-twitter-square fa-3x" style={styles} />
+      <i className="fab fa-tumblr-square fa-3x" style={styles} />
+      <i className="fab fa-facebook-square fa-3x" style={styles} />
+    </div>
+  );
 }
+
+const styles = {
+  padding: "0px 3px",
+  margin: "0 !important",
+  alignSelf: "flex-end"
+};
 
 export default Social;

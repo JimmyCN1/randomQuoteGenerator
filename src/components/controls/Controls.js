@@ -3,10 +3,6 @@ import Social from "./Social.js";
 import NextQuoteButton from "./NextQuoteButton.js";
 
 class Controls extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  // debugger;
   render() {
     return (
       <div style={styles}>
@@ -20,6 +16,7 @@ class Controls extends React.Component {
 const styles = {
   display: "flex",
   justifyContent: "space-between"
+  // alignItems: "flex-end"
 };
 
 export default Controls;

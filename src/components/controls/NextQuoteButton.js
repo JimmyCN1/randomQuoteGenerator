@@ -1,10 +1,6 @@
 import React from "react";
 
 class NextQuoteButton extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleClick = () => {
     this.props.fetchNextQuote();
   };
@@ -13,6 +9,7 @@ class NextQuoteButton extends React.Component {
     const { fetchNextQuote } = this.props;
     return (
       <input
+        style={styles}
         type="button"
         name="nextQuote"
         value="Next Quote"
@@ -21,5 +18,9 @@ class NextQuoteButton extends React.Component {
     );
   }
 }
+
+const styles = {
+  borderRadius: "4px"
+};
 
 export default NextQuoteButton;
