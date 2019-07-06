@@ -1,7 +1,7 @@
 import React from "react";
 
 function QuoteAuthor(props) {
-  return <p style={styles}>{props.author}</p>;
+  return <p style={styles}>-- {props.author}</p>;
 }
 
 const styles = {

@@ -16,7 +16,6 @@ class Controls extends React.Component {
 const styles = {
   display: "flex",
   justifyContent: "space-between"
-  // alignItems: "flex-end"
 };
 
 export default Controls;

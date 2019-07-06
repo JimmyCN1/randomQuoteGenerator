@@ -4,14 +4,16 @@ import QuoteText from "./QuoteText.js";
 import QuoteAuthor from "./QuoteAuthor.js";
 import Controls from "./controls/Controls.js";
 
+import AppTheme from "../AppTheme.js";
 import quotes from "../QuotesJSON.js";
 
 class Quote extends React.Component {
   constructor(props) {
     super(props);
+    const nextIndex = Math.floor(Math.random() * quotes.length);
     this.state = {
-      quote: quotes[0].quote,
-      author: quotes[0].author
+      quote: quotes[nextIndex].quote,
+      author: quotes[nextIndex].author
     };
   }
 
@@ -23,7 +25,22 @@ class Quote extends React.Component {
     });
   };
 
+  static contextType = AppTheme;
+
   render() {
+    let styles = {
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: "white",
+
+      borderRadius: "2%",
+      padding: "35px",
+      margin: "20px",
+      maxWidth: "600px"
+    };
+
+    styles.color = this.context.theme;
+
     let { quote, author } = this.state;
     const { fetchNextQuote } = this;
 
@@ -36,16 +53,5 @@ class Quote extends React.Component {
     );
   }
 }
-
-let styles = {
-  display: "flex",
-  flexDirection: "column",
-  backgroundColor: "black",
-  color: "lightgrey",
-  borderRadius: "2%",
-  padding: "35px",
-  margin: "20px",
-  maxWidth: "600px"
-};
 
 export default Quote;

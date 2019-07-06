@@ -1,5 +1,4 @@
 import React from "react";
-import { endianness } from "os";
 
 function Social(props) {
   return (

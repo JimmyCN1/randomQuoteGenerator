@@ -10,6 +10,7 @@ function QuoteText(props) {
 
 const styles = {
   fontSize: "120%"
+  // color: this.context.theme
 };
 
 export default QuoteText;
