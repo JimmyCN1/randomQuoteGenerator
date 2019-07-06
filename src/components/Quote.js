@@ -20,8 +20,9 @@ let styles = {
   backgroundColor: "black",
   color: "lightgrey",
   borderRadius: "2%",
-  padding: "2rem",
-  margin: "3rem"
+  padding: "35px",
+  margin: "20px",
+  maxWidth: "600px"
 };
 
 export default Quote;
